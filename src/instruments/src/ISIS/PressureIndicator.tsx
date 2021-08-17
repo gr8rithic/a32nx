@@ -7,7 +7,7 @@ enum BaroMode {
 }
 
 export const PressureIndicator: React.FC = () => {
-    const [baroMode] = useSimVar('L:A32NX_ISIS_BARO_MODE', 'enum');
+    const [baroMode] = useSimVar('L:A32NX_ISIS_BARO_MODE', 'Enum');
     const [hpaQnh] = useSimVar('A:KOHLSMAN SETTING MB:2', 'millibars');
     const [inHgQnh] = useSimVar('A:KOHLSMAN SETTING MB:2', 'inHg');
 
